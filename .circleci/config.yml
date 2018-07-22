@@ -7,14 +7,14 @@ version: 2
 jobs:
   one:
     docker:
-      - image: circleci/php:7.1.5-browsers
+      - image: circleci/php:php:7.1-browsers
     steps:
       - checkout
       - run: echo "A first hello"
       - run: sleep 25
   two:
     docker:
-      - image: circleci/php:7.1.5-browsers
+      - image: circleci/php:php:7.1-browsers
     steps:
       - checkout
       - run: echo "A more familiar hi"
